@@ -1,0 +1,47 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link rel="stylesheet" href="/Content/Styles/site.css" />
+    <script type="text/javascript" src="/Content/Scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://wurfl.io/wurfl.js?debug=true"></script>
+    <script type="text/javascript">
+        var formFactor = WURFL.form_factor;
+        window.addEventListener('DOMContentLoaded', function () {
+            $("#title").html(formFactor);
+        });
+    </script>
+    <script type="text/javascript">
+        //alert(document.URL);
+        var url = "/screen/default";
+        $(document).ready(function () {
+            switch (formFactor) {
+            case "Smartphone":
+                url = "/screen/smartphone";
+                break;
+            case "Tablet":
+                url = "/screen/tablet";
+                break;
+            }
+            $("#body").load(url);
+        });
+    </script>
+</head>
+<body>
+    <div class="topbar center">
+        <div id="title" style="padding: 4px"></div>
+    </div>
+    <div id="body">
+        <div class="center">
+            <img src="/Content/Images/loading.gif" />
+            
+            <!-- Use the code below to play with WURFL Image Tailor -->
+            <!--<img src="//wit.wurfl.io/http://www.expoware.org/images/cat.jpg">--> 
+        </div>
+
+    </div>
+</body>
+</html>

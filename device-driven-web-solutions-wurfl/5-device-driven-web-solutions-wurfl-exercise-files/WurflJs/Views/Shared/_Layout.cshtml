@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WURFL.js DETECTION</title>
+    <script src="http://wurfl.io/wurfl.js?debug=true"></script>
+    <script src="@Url.Content("~/Content/Scripts/jquery-1.9.1.min.js")"></script>
+    <link id="cssDefault" rel="stylesheet" href="/Content/Styles/site.css" />
+    <script type="text/javascript">
+        var formFactor = WURFL.form_factor;
+        if (formFactor == "Desktop" || formFactor == "Smartphone" || formFactor == "Tablet") {
+            var ref = document.createElement("link");
+            ref.setAttribute("rel", "stylesheet");
+            ref.setAttribute("type", "text/css");
+            ref.setAttribute("href", "/Content/Styles/site_" + formFactor + ".css");
+            document.getElementsByTagName("head")[0].appendChild(ref);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+
+</body>
+</html>

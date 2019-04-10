@@ -1,0 +1,10 @@
+﻿body {
+    background: gray;
+}
+#container {
+    border: solid 1px #fff;
+}
+#smartphone{ display: none;} 
+#tablet{ display: none;} 
+#desktop{ display: block;} 
+#small{ display: none;} 

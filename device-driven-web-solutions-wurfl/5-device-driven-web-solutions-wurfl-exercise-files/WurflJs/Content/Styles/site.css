@@ -1,0 +1,32 @@
+﻿body {
+    font-size: 1.0em;
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: #eee;
+    text-decoration: none;
+}
+a:visited {
+    color: #eee;
+    text-decoration: none;
+}
+a:hover {
+    color: #ff0;
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+.topbar {
+    background: #222;
+    color: #ff0;
+    width: 100%;
+}
+#basic-formfactor {
+    font-size: 1.6em;
+    font-weight: 700;
+}
