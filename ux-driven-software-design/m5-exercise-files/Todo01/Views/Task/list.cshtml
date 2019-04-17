@@ -1,0 +1,88 @@
+﻿@using Todo01.Infrastructure.Persistence.Model
+@model Todo01.Models.TaskListViewModel
+
+@{
+    var from = Model.From.HasValue ? "from " + Model.From.Value.ToString("ddd, d MMM") : "";
+    var to = Model.To.HasValue ? " to " + Model.To.Value.ToString("ddd, d MMM") : "";    
+}
+<h2>ALL TASKS <small>@from @to</small></h2>
+@if (!Model.TaskList.Any())
+{
+    <h1>No tasks found.</h1>
+    return;
+}
+
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <td style="width:10px">&nbsp;</td>
+            <td>Task</td>
+            <td>Due date</td>
+            <td>State</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var t in Model.TaskList)
+        {
+            var priority = t.Priority == PriorityLevel.High
+                ? "fa-exclamation-circle text-danger"
+                : (t.Priority == PriorityLevel.Low ? "fa-long-arrow-down text-primary" : "");
+            <tr data-id="@t.Id">
+                <td>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-chevron-down "></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a onclick="__set(this, 1)">Start</a></li>
+                            <li><a href="#" onclick="__set(this, 2)">Mark as completed</a></li>
+                            <li><a href="#" onclick="__set(this, 9)">Suspend</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" onclick="__set(this, -1)">Just delete it!</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <i class="fa fa-fw @priority"></i>
+                    @t.Description
+                </td>
+                <td>
+                    @if (t.DueDate.HasValue)
+                    {
+                        @t.DueDate.Value.ToString("ddd, d MMM")
+                    }
+                </td>
+                <td>
+                    @t.State
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    function __set(elem, code) {
+        var id = $(elem).closest("tr").data("id");
+        var url = "";
+        switch(code) {
+            case 1:
+                url = "/task/start/";
+                break;
+            case 2:
+                url = "/task/done/";
+                break;
+            case 9:
+                url = "/task/suspend/";
+                break;
+            default:
+                url = "/task/del/";
+                break;
+        }
+
+        url = url + id;
+        //alert(url);
+        Todo01.post(url, "", function() {
+            window.location.reload();
+        });
+    }
+</script>

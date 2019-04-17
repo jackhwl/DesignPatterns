@@ -1,0 +1,48 @@
+﻿@model Todo01.Models.NewTaskViewModel
+
+<form class="form-horizontal" method="post" action="@Url.Action("new", "task")">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>NEW TASK</legend>
+
+        <!-- Description-->
+        <div class="form-group">
+            <label class="col-xs-3 control-label" for="description">DESCRIPTION</label> <br/>
+            <div class="col-xs-9">
+                <textarea name="description" id="description" 
+                          rows="6" class="form-control input-lg"
+                          placeholder="description of the task">@Model.Task.Description</textarea>
+            </div>
+        </div>
+
+        <!-- Due date-->
+        <div class="form-group">
+            <label class="col-xs-3 control-label" for="duedate">DUE DATE</label> <br />
+            <div class="col-xs-9">
+                <input type="text" id="duedate" name="duedate"
+                       class="form-control input-lg "
+                       style="cursor:default"
+                       value="@Model.Task.DueDate.Value.ToString("MM-dd-yyyy")" />
+            </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-xs-3 control-label" for="priority">PRIORITY</label>
+            <div class="col-xs-9">
+                <select name="priority" id="priority" class="form-control input-lg">
+                    <option value="0" selected>NORMAL</option>
+                    <option value="2">HIGH</option>
+                    <option value="1">LOW</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="col-xs-offset-3 btn btn-lg  btn-danger">SAVE</button>
+    </fieldset>
+</form>
+
+<script>
+    $("#duedate").datepicker();
+</script>
