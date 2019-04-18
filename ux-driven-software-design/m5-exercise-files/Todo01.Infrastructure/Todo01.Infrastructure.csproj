@@ -54,6 +54,7 @@
     <Compile Include="Persistence\Repositories\TodoRepository.cs" />
     <Compile Include="Persistence\TodoDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadTodoDatabase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

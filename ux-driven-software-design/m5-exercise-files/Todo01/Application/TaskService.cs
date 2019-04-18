@@ -21,6 +21,8 @@ namespace Todo01.Application
 
         public TaskListViewModel GetTaskListViewModel(DateTime? from, DateTime? to)
         {
+            //var rdb = new ReadTodoDatabase(); 
+            //var list = (from t in rdb.TodoItems select t).ToList();
             //var list = _repository.All(from.GetValueOrDefault(), to.GetValueOrDefault(DateTime.MaxValue));
 
             var list = ReadModel.All(from, to);
