@@ -1,0 +1,8 @@
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Infrastructure.dll.config
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Infrastructure.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Infrastructure.pdb
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Core.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Core.pdb
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.pdb

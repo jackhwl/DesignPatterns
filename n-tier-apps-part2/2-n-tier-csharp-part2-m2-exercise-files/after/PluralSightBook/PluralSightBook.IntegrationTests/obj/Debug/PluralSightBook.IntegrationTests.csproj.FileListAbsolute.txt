@@ -1,0 +1,10 @@
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.IntegrationTests.dll.config
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.IntegrationTests.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.IntegrationTests.pdb
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Core.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Infrastructure.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Core.pdb
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Infrastructure.pdb
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.IntegrationTests\obj\Debug\PluralSightBook.IntegrationTests.csprojResolveAssemblyReference.cache
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.IntegrationTests\obj\Debug\PluralSightBook.IntegrationTests.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.IntegrationTests\obj\Debug\PluralSightBook.IntegrationTests.pdb

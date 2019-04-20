@@ -1,0 +1,9 @@
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.UnitTests\bin\Debug\PluralSightBook.UnitTests.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.UnitTests\bin\Debug\PluralSightBook.UnitTests.pdb
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.UnitTests\bin\Debug\PluralSightBook.Core.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.UnitTests\bin\Debug\Telerik.JustMock.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.UnitTests\bin\Debug\Telerik.CodeWeaver.Api.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.UnitTests\bin\Debug\PluralSightBook.Core.pdb
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.UnitTests\obj\Debug\PluralSightBook.UnitTests.csprojResolveAssemblyReference.cache
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.UnitTests\obj\Debug\PluralSightBook.UnitTests.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.UnitTests\obj\Debug\PluralSightBook.UnitTests.pdb
