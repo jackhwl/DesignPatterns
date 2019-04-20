@@ -1,0 +1,9 @@
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBookWebsite\bin\PluralSightBookWebsite.dll
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBookWebsite\bin\PluralSightBookWebsite.pdb
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBookWebsite\bin\PluralSightBook.Core.dll
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBookWebsite\bin\PluralSightBook.Infrastructure.dll
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBookWebsite\bin\PluralSightBook.Core.pdb
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBookWebsite\bin\PluralSightBook.Infrastructure.pdb
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBookWebsite\obj\Debug\PluralSightBookWebsite.csprojResolveAssemblyReference.cache
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBookWebsite\obj\Debug\PluralSightBookWebsite.dll
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBookWebsite\obj\Debug\PluralSightBookWebsite.pdb

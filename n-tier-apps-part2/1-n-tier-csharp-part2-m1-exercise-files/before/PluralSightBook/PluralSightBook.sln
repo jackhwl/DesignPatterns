@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluralSightBookWebsite", "PluralSightBookWebsite\PluralSightBookWebsite.csproj", "{D772DF12-70D1-4A9F-BECC-2097F82BD706}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluralSightBook.Core", "PluralSightBook.Core\PluralSightBook.Core.csproj", "{9B1F5463-5B58-4A57-933B-F7A17D6B921D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluralSightBook.Infrastructure", "PluralSightBook.Infrastructure\PluralSightBook.Infrastructure.csproj", "{F1153B88-472D-46C7-9965-571665970A78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D772DF12-70D1-4A9F-BECC-2097F82BD706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D772DF12-70D1-4A9F-BECC-2097F82BD706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D772DF12-70D1-4A9F-BECC-2097F82BD706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D772DF12-70D1-4A9F-BECC-2097F82BD706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B1F5463-5B58-4A57-933B-F7A17D6B921D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1F5463-5B58-4A57-933B-F7A17D6B921D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1F5463-5B58-4A57-933B-F7A17D6B921D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1F5463-5B58-4A57-933B-F7A17D6B921D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1153B88-472D-46C7-9965-571665970A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1153B88-472D-46C7-9965-571665970A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1153B88-472D-46C7-9965-571665970A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1153B88-472D-46C7-9965-571665970A78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

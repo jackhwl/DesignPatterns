@@ -1,0 +1,26 @@
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Infrastructure.dll.config
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Infrastructure.dll
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Infrastructure.pdb
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Core.dll
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Core.pdb
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.dll
+C:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\m03\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.pdb
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Infrastructure.dll.config
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Infrastructure.dll
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Infrastructure.pdb
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Core.dll
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Core.pdb
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.dll
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.pdb
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Infrastructure.dll.config
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Infrastructure.dll
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Infrastructure.pdb
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Core.dll
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.Infrastructure\bin\Debug\PluralSightBook.Core.pdb
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.csprojAssemblyReference.cache
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.csproj.CopyComplete
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.dll
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.Infrastructure\obj\Debug\PluralSightBook.Infrastructure.pdb

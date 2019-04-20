@@ -1,0 +1,24 @@
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.IntegrationTests.dll.config
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.IntegrationTests.dll
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.IntegrationTests.pdb
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Core.dll
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Infrastructure.dll
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Core.pdb
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Infrastructure.pdb
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.IntegrationTests\obj\Debug\PluralSightBook.IntegrationTests.csprojResolveAssemblyReference.cache
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.IntegrationTests\obj\Debug\PluralSightBook.IntegrationTests.dll
+D:\Dev\Steve\PluralsightCourses\020 - N Tier Applications\part2-m01\after\PluralSightBook\PluralSightBook.IntegrationTests\obj\Debug\PluralSightBook.IntegrationTests.pdb
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.IntegrationTests.dll.config
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.IntegrationTests.dll
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.IntegrationTests.pdb
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Core.dll
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Infrastructure.dll
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Core.pdb
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Infrastructure.pdb
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\bin\Debug\PluralSightBook.Infrastructure.dll.config
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\obj\Debug\PluralSightBook.IntegrationTests.csprojAssemblyReference.cache
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\obj\Debug\PluralSightBook.IntegrationTests.csproj.CoreCompileInputs.cache
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\obj\Debug\PluralSightBook.IntegrationTests.csproj.CopyComplete
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\obj\Debug\PluralSightBook.IntegrationTests.dll
+C:\Jack\Projects\DesignPatterns\n-tier-apps-part2\1-n-tier-csharp-part2-m1-exercise-files\after\PluralSightBook\PluralSightBook.IntegrationTests\obj\Debug\PluralSightBook.IntegrationTests.pdb
