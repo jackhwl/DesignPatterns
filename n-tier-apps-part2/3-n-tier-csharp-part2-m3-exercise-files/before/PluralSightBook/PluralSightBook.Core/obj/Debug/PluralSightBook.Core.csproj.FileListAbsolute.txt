@@ -1,0 +1,5 @@
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Core\bin\Debug\PluralSightBook.Core.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Core\bin\Debug\PluralSightBook.Core.pdb
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Core\obj\Debug\PluralSightBook.Core.dll
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Core\obj\Debug\PluralSightBook.Core.pdb
+D:\Dev\PluralsightCourses\020 - N Tier Applications\part2-m02\after\PluralSightBook\PluralSightBook.Core\obj\Debug\PluralSightBook.Core.csprojResolveAssemblyReference.cache
