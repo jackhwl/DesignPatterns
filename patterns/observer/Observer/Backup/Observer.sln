@@ -1,8 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
-MinimumVisualStudioVersion = 10.0.40219.1
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer.csproj", "{74CC2728-1FF2-44C1-989F-A8B2E31EAEFA}"
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ObserverModels", "..\ObserverModels\ObserverModels.modelproj", "{DB3E4169-F1D6-41E3-969E-7E4F7CCBE810}"
@@ -40,8 +38,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3D6CD180-5840-43CD-A3CB-33D0C3D02156}
 	EndGlobalSection
 EndGlobal
