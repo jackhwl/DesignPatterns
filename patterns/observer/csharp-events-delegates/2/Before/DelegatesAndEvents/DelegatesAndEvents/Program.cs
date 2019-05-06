@@ -23,11 +23,13 @@ namespace DelegatesAndEvents
             //worker.WorkPerformed += new EventHandler<WorkPerformedEventArgs>(Worker_WorkPerformed);
             //worker.WorkCompleted += new EventHandler(Worker_WorkCompleted);
             //worker.WorkPerformed += Worker_WorkPerformed;
-            worker.WorkPerformed += delegate (object sender, WorkPerformedEventArgs e)
-            {
-                Console.WriteLine(e.Hours + " " + e.WorkType);
-            };
-            worker.WorkCompleted += Worker_WorkCompleted;
+            //worker.WorkPerformed += delegate (object sender, WorkPerformedEventArgs e)
+            //{
+            //    Console.WriteLine(e.Hours + " " + e.WorkType);
+            //};
+            worker.WorkPerformed += (s, e) => Console.WriteLine(e.Hours + " " + e.WorkType);
+            //worker.WorkCompleted += Worker_WorkCompleted;
+            worker.WorkCompleted += (s, e) => Console.WriteLine("Work is completed");
             worker.DoWork(8, WorkType.GenerateReports);
             Console.ReadLine();
         }
@@ -36,10 +38,10 @@ namespace DelegatesAndEvents
         //{
         //    Console.WriteLine(e.Hours + " " + e.WorkType);
         //}
-        private static void Worker_WorkCompleted(object sender, EventArgs e)
-        {
-            Console.WriteLine("Work is done");
-        }
+        //private static void Worker_WorkCompleted(object sender, EventArgs e)
+        //{
+        //    Console.WriteLine("Work is done");
+        //}
         //static void DoWork(WorkPerformedHandler del)
         //{
         //    del(5, WorkType.GoToMeetings);
