@@ -16,6 +16,18 @@ namespace DelegatesAndEvents
             var data = new ProcessData();
             data.Process(2, 3, mulDel);
             data.Process(2, 3, addDel);
+
+            Action<int, int> myAction = (x, y) => Console.Write(x + y);
+            Action<int, int> myMulAction = (x, y) => Console.Write(x * y);
+            data.ProcessAction(5, 3, myAction);
+            data.ProcessAction(5, 3, myMulAction);
+
+            Func<int, int, int> funcAddDel = (x, y) => x + y;
+            Func<int, int, int> funcMulDel = (x, y) => x * y;
+
+            data.ProcessFunc(4, 7, funcAddDel);
+            data.ProcessFunc(4, 7, funcMulDel);
+
             //var del1 = new WorkPerformedHandler(WorkPerformed1);
             //var del2 = new WorkPerformedHandler(WorkPerformed2);
             //var del3 = new WorkPerformedHandler(WorkPerformed3);
