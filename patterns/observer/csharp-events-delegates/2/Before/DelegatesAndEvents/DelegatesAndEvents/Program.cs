@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace DelegatesAndEvents
 {
-
+    public delegate int BizRulesDelegate(int x, int y);
     class Program
     {
         static void Main(string[] args)
         {
+            BizRulesDelegate addDel = (x, y) => x + y;
+            BizRulesDelegate mulDel = (x, y) => x * y;
+            var data = new ProcessData();
+            data.Process(2, 3, mulDel);
+            data.Process(2, 3, addDel);
             //var del1 = new WorkPerformedHandler(WorkPerformed1);
             //var del2 = new WorkPerformedHandler(WorkPerformed2);
             //var del3 = new WorkPerformedHandler(WorkPerformed3);
