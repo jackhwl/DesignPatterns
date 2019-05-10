@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Reservations
 {
-    public interface IHotelService
+    public interface IHotelSelector
     {
-        IVacationPart MakeBooking(HotelInfo hotel, DateTime checkin, DateTime checkout);
+        HotelInfo SelectHotel(string town, string hotelName);
     }
-    
 }

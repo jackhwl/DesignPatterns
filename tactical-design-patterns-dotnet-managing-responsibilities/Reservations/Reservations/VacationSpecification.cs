@@ -8,7 +8,12 @@ namespace Reservations
 {
     public class VacationSpecification
     {
-
+        private IList<IVacationPart> parts;
+        public VacationSpecification(IList<IVacationPart> parts)
+        {
+            // TODO: Complete member initialization
+            this.parts = parts;
+        }
 
     }
 }

@@ -10,6 +10,10 @@ namespace Reservations
     {
         static void Main(string[] args)
         {
+            new Application(
+                new VacationPartFactory(new HotelSector(), new HotelService(), new AirplaneService()))
+                .Run();
+            Console.ReadLine();
         }
     }
 }
