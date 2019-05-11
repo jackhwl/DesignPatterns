@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Houses
 {
-    public class Painter
+    public class Painter : IPainter
     {
         private string name;
         private int daysPerHouse;
@@ -16,17 +16,17 @@ namespace Houses
             this.daysPerHouse = daysPerHouse;
         }
 
-        public double PaintFor(double totalDays)
+        public double Paint(double houses)
         {
-            double totalHouses = totalDays / this.daysPerHouse;
+            double days = this.EstimateDays(houses);
 
             Console.WriteLine("{0} Painting {1:0.00} houses for {2:0.00} days.", 
-                this.name, totalHouses, totalDays);
+                this.name, houses, days);
 
-            return totalHouses;
+            return days;
         }
 
-        public int EstimateDays(int housesCount)
+        public double EstimateDays(double housesCount)
         {
             return housesCount * this.daysPerHouse;
         }
