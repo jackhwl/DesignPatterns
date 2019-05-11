@@ -9,15 +9,26 @@ namespace Houses
     public class LandOwner
     {
         private int totalHouses;
-        private Painter painter;
-        public LandOwner(int totalHouses)
+        private IEnumerable<Painter> painters;
+        public LandOwner(int totalHouses, IEnumerable<Painter> painters)
         {
             this.totalHouses = totalHouses;
-            this.painter = new Painter(4);
+            this.painters = new List<Painter>(painters);
         }
         public void MaintainHouses()
         {
-            this.painter.Paint(this.totalHouses);
+            double totalVelocity = this.painters
+                .Select(painter => painter.EstimateDays(1))
+                .Select(daysPerHouse => 1 / (double)daysPerHouse)
+                .Sum();
+
+            double totalDays = this.totalHouses / totalVelocity;
+
+            double totalHouses = this.painters
+                .Select(painter => painter.PaintFor(totalDays))
+                .Sum();
+
+            Console.WriteLine("\nPainted {0:0} houses.", totalHouses);
         }
     }
 }

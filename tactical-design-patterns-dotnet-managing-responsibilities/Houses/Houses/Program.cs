@@ -10,7 +10,11 @@ namespace Houses
     {
         static void Main(string[] args)
         {
-            var owner = new LandOwner(14);
+            var owner = new LandOwner(14, new Painter[]{
+                new Painter("Joe", 4),
+                new Painter("Jill", 5),
+                new Painter("Buster", 3)
+            });
 
             owner.MaintainHouses();
 
