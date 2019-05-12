@@ -10,7 +10,7 @@ namespace Houses
     {
         static void Main(string[] args)
         {
-            IPaintingScheduler scheduler = new ProportionalScheduler();
+            IPaintingScheduler scheduler = new WholeHouseScheduler();
             IPainter localPaintersCo = 
                 new PaintingCompany(
                     new IPainter[]{
