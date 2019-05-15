@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{0771D539-A2B8-4654-82B6-26E0E6F2435D}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Family</RootNamespace>
+    <RootNamespace>Family.Common</RootNamespace>
     <AssemblyName>Family</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -46,9 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChainElement.cs" />
     <Compile Include="IBearded.cs" />
     <Compile Include="IEmotional.cs" />
     <Compile Include="IHairy.cs" />
+    <Compile Include="NullBearded.cs" />
+    <Compile Include="NullEmotional.cs" />
+    <Compile Include="NullHairy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

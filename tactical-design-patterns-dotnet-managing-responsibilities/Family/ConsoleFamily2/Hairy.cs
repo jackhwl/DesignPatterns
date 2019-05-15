@@ -3,10 +3,10 @@ using Family.Common;
 
 namespace ConsoleFamily2
 {
-    class Hairy : IHairy
+    class Hairy : ChainElement, IHairy
     {
         private readonly string owner;
-        public Hairy(string owner)
+        public Hairy(string owner, ChainElement next): base(next)
         {
             this.owner = owner;
         }

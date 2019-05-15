@@ -3,10 +3,10 @@ using Family.Common;
 
 namespace ConsoleFamily2
 {
-    class Bearded : IBearded
+    class Bearded : ChainElement, IBearded
     {
         private readonly string owner;
-        public Bearded(string owner)
+        public Bearded(string owner, ChainElement next) : base(next)
         {
             this.owner = owner;
         }

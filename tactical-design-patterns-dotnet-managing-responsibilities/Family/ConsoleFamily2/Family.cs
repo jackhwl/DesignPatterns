@@ -17,11 +17,13 @@ namespace ConsoleFamily2
             Console.WriteLine("Winter just came...");
             foreach(FamilyMember member in members)
             {
-                IHairy hairy = member.As<IHairy>();
-                if (hairy != null) hairy.GrowHair();
+                //IHairy hairy = member.As<IHairy>();
+                //if (hairy != null) hairy.GrowHair();
 
-                IBearded bearded = member.As<IBearded>();
-                if (bearded != null) bearded.GrownBeard();
+                //IBearded bearded = member.As<IBearded>();
+                //if (bearded != null) bearded.GrownBeard();
+                member.As<IHairy>(NullHairy.Instance).GrowHair();
+                member.As<IBearded>(NullBearded.Instance).GrownBeard();
             }
             Console.WriteLine(new string('-', 20));
         }
@@ -31,8 +33,9 @@ namespace ConsoleFamily2
             Console.WriteLine("Summer is here...");
             foreach(FamilyMember member in members)
             {
-                IEmotional emotional = member.As<IEmotional>();
-                if (emotional != null) emotional.BeHappy();
+                //IEmotional emotional = member.As<IEmotional>();
+                //if (emotional != null) emotional.BeHappy();
+                member.As<IEmotional>(NullEmotional.Instance).BeHappy();
             }
             Console.WriteLine(new string('-', 20));
         }
