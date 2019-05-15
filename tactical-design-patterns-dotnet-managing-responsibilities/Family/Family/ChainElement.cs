@@ -6,23 +6,20 @@ using System.Threading.Tasks;
 
 namespace Family.Common
 {
-    public class ChainElement
+    public class ChainElement : IChainElement
     {
-        private readonly ChainElement next;
-        public ChainElement(ChainElement next)
+        private readonly IChainElement next;
+        public ChainElement(IChainElement next)
         {
             this.next = next;
         }
-
+        protected ChainElement(): this(NullChainElement.Instance){}
         public virtual T As<T>(T defaultValue) where T: class
         {
             if (this is T)
                 return this as T;
 
-            if (this.next != null)
-                return this.next.As<T>(defaultValue);
-
-            return defaultValue;
+            return this.next.As<T>(defaultValue);
         }
     }
 }

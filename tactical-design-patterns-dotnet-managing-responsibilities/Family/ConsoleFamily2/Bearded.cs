@@ -10,6 +10,10 @@ namespace ConsoleFamily2
         {
             this.owner = owner;
         }
+        public Bearded(string owner)
+        {
+            this.owner = owner;
+        }
         public void GrownBeard()
         {
             Console.WriteLine("{0}: beard grows", this.owner);

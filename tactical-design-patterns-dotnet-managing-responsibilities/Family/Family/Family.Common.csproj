@@ -48,9 +48,11 @@
   <ItemGroup>
     <Compile Include="ChainElement.cs" />
     <Compile Include="IBearded.cs" />
+    <Compile Include="IChainElement.cs" />
     <Compile Include="IEmotional.cs" />
     <Compile Include="IHairy.cs" />
     <Compile Include="NullBearded.cs" />
+    <Compile Include="NullChainElement.cs" />
     <Compile Include="NullEmotional.cs" />
     <Compile Include="NullHairy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

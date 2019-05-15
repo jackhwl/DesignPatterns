@@ -10,6 +10,10 @@ namespace ConsoleFamily2
         {
             this.owner = owner;
         }
+        public Hairy(string owner)
+        {
+            this.owner = owner;
+        }
         public void GrowHair()
         {
             Console.WriteLine("{0}: hair gets long", this.owner);
