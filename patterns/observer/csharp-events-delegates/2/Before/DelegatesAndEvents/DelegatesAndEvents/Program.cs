@@ -11,6 +11,23 @@ namespace DelegatesAndEvents
     {
         static void Main(string[] args)
         {
+            var custs = new List<Customer>
+            {
+                new Customer { City = "Phoenix", FirstName = "John", LastName = "Doe", ID = 1},
+                new Customer { City = "Phoenix", FirstName = "Jane", LastName = "Doe", ID = 500},
+                new Customer { City = "Seattle", FirstName = "Suki", LastName = "Pizzoro", ID = 3},
+                new Customer { City = "New York City", FirstName = "Michelle", LastName = "Smith", ID = 4},
+            };
+
+            var phxCusts = custs
+                .Where(c => c.City == "Phoenix" && c.ID < 500)
+                .OrderBy(c => c.FirstName);
+
+            foreach (var cust in phxCusts)
+            {
+                Console.WriteLine(cust.FirstName);
+            }
+
             BizRulesDelegate addDel = (x, y) => x + y;
             BizRulesDelegate mulDel = (x, y) => x * y;
             var data = new ProcessData();
