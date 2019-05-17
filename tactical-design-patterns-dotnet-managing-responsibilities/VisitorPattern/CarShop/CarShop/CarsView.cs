@@ -16,11 +16,16 @@ namespace CarShop
 
         public void Render()
         {
-            //foreach(Car car in cars)
-            //    Console.WriteLine("{0} {1} {2}cc {3}KW {4} seat(s)", 
-            //        car.make, car.model, 
-            //        car.engine.CylinderVolume, car.engine.Power,
-            //        car.seats.Sum(seat => seat.Capacity));
+            foreach (Car car in this.cars)
+            {
+                CarToStringVisitor converter = new CarToStringVisitor();
+                car.Accept(converter);
+                Console.WriteLine(converter.GetCarDescripttion());
+            }
+                //Console.WriteLine("{0} {1} {2}cc {3}KW {4} seat(s)",
+                //    car.make, car.model,
+                //    car.engine.CylinderVolume, car.engine.Power,
+                //    car.seats.Sum(seat => seat.Capacity));
         }
     }
 }

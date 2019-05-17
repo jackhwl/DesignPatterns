@@ -15,7 +15,10 @@ namespace CarShop
             this.Name = name;
             this.Capacity = capacity;
         }
-
+        public void Accept(ICarVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
         public static IEnumerable<Seat> FourSeasonConfiguration
         {
             get
