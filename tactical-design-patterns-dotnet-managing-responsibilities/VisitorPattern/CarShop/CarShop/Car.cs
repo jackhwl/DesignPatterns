@@ -8,14 +8,20 @@ namespace CarShop
 {
     class Car
     {
-        public string Make { get; private set; }
-        public string Model { get; private set; }
-        public Engine Engine { get; private set; }
-        public Car(string make, string model, Engine engine)
+        private readonly string make;
+        private readonly string model;
+        private readonly Engine engine;
+        private readonly IEnumerable<Seat> seats;
+        public Car(string make, string model, Engine engine, IEnumerable<Seat> seats)
         {
-            this.Make = make;
-            this.Model = model;
-            this.Engine = engine;
+            this.make = make;
+            this.model = model;
+            this.engine = engine;
+            this.seats = seats;
+        }
+        public CarRegistration Register()
+        {
+            return new CarRegistration(this.make.ToUpper(), this.model, this.engine.CylinderVolume, this.seats.Sum(seat => seat.Capacity));
         }
     }
 }
