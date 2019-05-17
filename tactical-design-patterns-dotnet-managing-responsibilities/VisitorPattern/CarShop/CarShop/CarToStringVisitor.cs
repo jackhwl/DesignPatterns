@@ -8,25 +8,26 @@ namespace CarShop
 {
     class CarToStringVisitor : ICarVisitor
     {
-        private string report;
-        private string seatsCount;
+        private string carDetails;
+        private string engineDetails;
+        private int seatsCount;
         public string GetCarDescripttion()
         {
-            return this.report + string.Format(" {0} seats", this.seatsCount);
+            return string.Format("{0} {1} {2} seats", this.carDetails, this.engineDetails, this.seatsCount);
         }
         public void VisitCar(string make, string model)
         {
             //cannot access car.make car.model;
-            this.report += string.Format("{0} {1}", make, model);
+            carDetails = string.Format("{0} {1}", make, model);
         }
-        public void Visit(Engine engine)
+        public void VisitEngine(float power, float cylinderVolume, float temperatureC)
         {
-            this.report += string.Format(" {0}cc {1}KW", engine.CylinderVolume, engine.Power);
+            engineDetails = string.Format(" {0}cc {1}KW", cylinderVolume, power);
         }
 
-        public void Visit(Seat seat)
+        public void VisitSeat(string name, int capacity)
         {
-            this.seatsCount += seat.Capacity;
+            this.seatsCount += capacity;
         }
 
     }
