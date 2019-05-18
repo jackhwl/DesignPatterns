@@ -6,9 +6,15 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            var buffer = new CircularBuffer<double>(capacity: 3);
+            var buffer = new Buffer<double>();
 
+            
             ProcessInput(buffer);
+
+            foreach (var item in buffer)
+            {
+                Console.WriteLine(item);
+            }
 
             ProcessBuffer(buffer);
         }
@@ -19,11 +25,9 @@ namespace DataStructures
             Console.WriteLine("Buffer: ");
             while (!buffer.IsEmpty)
             {
-                Console.WriteLine("\t" + buffer.Read());
-                //sum += buffer.Read();                
+                sum += buffer.Read();
             }
-            //Console.WriteLine(sum);
-            Console.ReadLine();
+            Console.WriteLine(sum);
         }
 
         private static void ProcessInput(IBuffer<double> buffer)
