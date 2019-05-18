@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarShop
 {
-    class Car
+    class Car : ICar
     {
         private readonly string make;
         private readonly string model;
@@ -25,12 +25,21 @@ namespace CarShop
             //return new CarRegistration(this.make.ToUpper(), this.model, this.engine.CylinderVolume, this.seats.Sum(seat => seat.Capacity));
         }
 
-        public void Accept(ICarVisitor visitor)
+        public void Accept(Func<ICarVisitor> visitorFactory)
         {
-            this.engine.Accept(visitor);
+            ICarVisitor visitor = visitorFactory();
+            this.engine.Accept(()=>visitor);
             foreach(Seat seat in this.seats)
-                seat.Accept(visitor);
+                seat.Accept(()=>visitor);
             visitor.VisitCar(this.make, this.model);
         }
+
+        public T Accept<T>(Func<ICarVisitor<T>> visitorFactory)
+        {
+            ICarVisitor<T> visitor = visitorFactory();
+            this.Accept(()=>(ICarVisitor)visitor);
+            return visitor.ProduceResult();
+        }
+
     }
 }

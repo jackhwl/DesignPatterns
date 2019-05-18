@@ -18,9 +18,9 @@ namespace CarShop
         {
             foreach (Car car in this.cars)
             {
-                CarToStringVisitor converter = new CarToStringVisitor();
-                car.Accept(converter);
-                Console.WriteLine(converter.GetCarDescripttion());
+                string report = car.Accept(() => new CarToStringVisitor());
+                Console.WriteLine(report);
+                //Console.WriteLine(converter.GetCarDescripttion());
             }
                 //Console.WriteLine("{0} {1} {2}cc {3}KW {4} seat(s)",
                 //    car.make, car.model,

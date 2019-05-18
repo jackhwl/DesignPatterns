@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace CarShop
 {
-    class CarToStringVisitor : ICarVisitor
+    class CarToStringVisitor : ICarVisitor<string>
     {
         private string carDetails;
         private string engineDetails;
         private int seatsCount;
-        public string GetCarDescripttion()
+        public string ProduceResult()
         {
             return string.Format("{0} {1} {2} seats", this.carDetails, this.engineDetails, this.seatsCount);
         }
@@ -20,9 +20,9 @@ namespace CarShop
             //cannot access car.make car.model;
             carDetails = string.Format("{0} {1}", make, model);
         }
-        public void VisitEngine(float power, float cylinderVolume, float temperatureC)
+        public void VisitEngine(EngineStructure structure, EngineStatus status)
         {
-            engineDetails = string.Format(" {0}cc {1}KW", cylinderVolume, power);
+            engineDetails = string.Format(" {0}cc {1}KW", structure.CylinderVolume, structure.Power);
         }
 
         public void VisitSeat(string name, int capacity)

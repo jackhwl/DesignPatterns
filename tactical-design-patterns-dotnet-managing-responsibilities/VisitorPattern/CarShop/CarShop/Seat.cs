@@ -15,9 +15,9 @@ namespace CarShop
             this.name = name;
             this.capacity = capacity;
         }
-        public void Accept(ICarVisitor visitor)
+        public void Accept(Func<ICarVisitor> visitorFactory)
         {
-            visitor.VisitSeat(this.name, this.capacity);
+            visitorFactory().VisitSeat(this.name, this.capacity);
         }
         public static IEnumerable<Seat> FourSeasonConfiguration
         {

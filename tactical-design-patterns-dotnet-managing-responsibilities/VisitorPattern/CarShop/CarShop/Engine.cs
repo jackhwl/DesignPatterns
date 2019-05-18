@@ -18,9 +18,12 @@ namespace CarShop
             this.cylinderVolume = cylinderVolume;
         }
 
-        public void Accept(ICarPartVisitor visitor)
+        public void Accept(Func<ICarPartVisitor> visitorFactory)
         {
-            visitor.VisitEngine(this.power, this.cylinderVolume, this.temperatureC);
+            EngineStructure structure = new EngineStructure(this.power, this.cylinderVolume);
+            EngineStatus status = new EngineStatus(this.temperatureC, 0);
+            var vv = visitorFactory();
+            vv.VisitEngine(structure, status);
         }
         public void Run(TimeSpan time)
         {
