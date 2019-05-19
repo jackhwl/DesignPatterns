@@ -32,7 +32,7 @@ namespace ReflectIt
             return Activator.CreateInstance(closedType);
         }
     }
-    class Employee
+    public class Employee
     {
         public string Name {get;set;}
         public void Speak<T>(){
