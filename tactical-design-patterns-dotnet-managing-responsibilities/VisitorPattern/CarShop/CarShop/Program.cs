@@ -10,10 +10,16 @@ namespace CarShop
     {
         static void Main(string[] args)
         {
-            IEnumerable<Car> cars = new CarRepository().GetAll();
+            Car car = new CarRepository().GetAll().Last();
+            car.Accept(()=> new SaveCarVisitor());
 
-            CarsView view = new CarsView(cars);
-            view.Render();
+            //Console.WriteLine("Press ENTER to exit...");
+
+            //IEnumerable<Car> cars = new CarRepository().GetAll();
+
+            
+            //CarsView view = new CarsView(cars);
+            //view.Render();
 
             //Car car = new Car("Renault", "Megane", new Engine(66, 1598), Seat.FourSeasonConfiguration);
 
