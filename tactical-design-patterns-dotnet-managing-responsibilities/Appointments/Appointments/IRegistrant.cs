@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Appointments
 {
-    interface IUser
+    interface IRegistrant
     {
-        IAppointment MakeAppointment(DateTime startTime);
-        void Accept(Func<IUserVisitor> visitorFactory);
+        void Register();
+        void ChangePassword(string newPassword);
     }
 }

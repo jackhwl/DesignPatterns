@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Appointments
 {
-    interface IUser
+    interface IRegistrantUser: IUser, IRegistrant
     {
-        IAppointment MakeAppointment(DateTime startTime);
-        void Accept(Func<IUserVisitor> visitorFactory);
     }
 }
