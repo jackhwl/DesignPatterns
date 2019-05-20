@@ -16,6 +16,7 @@ namespace ReflectIt
             foreach (var arg in genericArguments)
             {
                 Console.Write("[{0}]", arg.Name);
+                
             }
             Console.WriteLine();
             Console.ReadLine();
