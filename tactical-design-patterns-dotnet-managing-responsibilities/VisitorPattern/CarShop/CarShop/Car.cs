@@ -21,8 +21,9 @@ namespace CarShop
         }
         public CarRegistration Register()
         {
-            return null;
+            //return null;
             //return new CarRegistration(this.make.ToUpper(), this.model, this.engine.CylinderVolume, this.seats.Sum(seat => seat.Capacity));
+            return new CarRegistrationBuilder(this).ProduceResult();
         }
 
         public void Accept(Func<ICarVisitor> visitorFactory)

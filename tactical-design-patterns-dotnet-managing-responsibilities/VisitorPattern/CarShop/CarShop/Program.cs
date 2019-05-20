@@ -10,14 +10,15 @@ namespace CarShop
     {
         static void Main(string[] args)
         {
-            Car car = new CarRepository().GetAll().Last();
-            car.Accept(()=> new SaveCarVisitor());
+            //Car car = new CarRepository().GetAll().Last();
+            //car.Accept(()=> new SaveCarVisitor());
 
             //Console.WriteLine("Press ENTER to exit...");
 
-            //IEnumerable<Car> cars = new CarRepository().GetAll();
+            IEnumerable<Car> cars = new CarRepository().GetAll();
+            foreach(Car car in cars)
+                Console.WriteLine(car.Register());
 
-            
             //CarsView view = new CarsView(cars);
             //view.Render();
 
