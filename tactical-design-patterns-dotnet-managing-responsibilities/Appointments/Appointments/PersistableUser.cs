@@ -45,5 +45,6 @@ namespace Appointments
         public override string ToString()
         {
             return string.Format("PersistableUser(name-{0}, password={1})", this.userName, this.password);
-        }    }
+        }
+    }
 }
