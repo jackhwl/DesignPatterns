@@ -8,6 +8,18 @@ namespace Appointments
 {
     class Program
     {
+        static void MassRegister(IEnumerable<IRegistrant> registrants)
+        {
+            foreach(IRegistrant registrant in registrants)
+                registrant.Register();
+        }
+        static void ScramblePasswords(IEnumerable<IRegistrant> registrants)
+        {
+            foreach(IRegistrant registrant in registrants)
+            {
+                registrant.ChangePassword(Guid.NewGuid().ToString().Substring(0, 6));
+            }
+        }
         static void Main(string[] args)
         {
             DomainService domain = new DomainService(new UserFactory(new DataService()));
@@ -20,8 +32,21 @@ namespace Appointments
             group.AddMember(joe);
             group.AddMember(jack);
 
-            IRegistrantGroup regGroup = new RegistrantGroup(group, "friends", "secret");
-            regGroup.Register();
+            DataService dataSvc = new DataService();
+
+            IEnumerable<IRegistrant> registrants = new IRegistrant[]
+            {
+                new PersistableUser(jill, dataSvc, "pwd"),
+                new PersistableUser(jack, dataSvc, "pwd"),
+                new PersistableUser(joe, dataSvc, "pwd"),
+                new RegistrantGroup(group, "friends", "secret")
+            };
+
+            MassRegister(registrants);
+            ScramblePasswords(registrants);
+
+            //IRegistrantGroup regGroup = new RegistrantGroup(group, "friends", "secret");
+            //regGroup.Register();
 
             //IUser user = domain.RegisterUser("zoranh", "magicword");
             //Console.WriteLine("{0}\n", user);
