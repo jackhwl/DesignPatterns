@@ -80,7 +80,7 @@ namespace DateTimeDemo
         static void Main(string[] args)
         {
 
-            //Test();
+            Test();
 			FILETIME ft;
 			GetSystemTimeAsFileTime(out ft);
 
