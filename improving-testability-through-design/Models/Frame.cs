@@ -38,5 +38,15 @@ namespace Models
                 this.width = value;
             }
         }
+
+		public bool TryAddCircle(Common.ICircle circle)
+		{
+			if (circle.X < circle.Radius ||
+                circle.X > this.length - circle.Radius ||
+                circle.Y < circle.Radius ||
+                circle.Y > this.width - circle.Radius)
+                return false;
+			return true;
+		}
     }
 }
