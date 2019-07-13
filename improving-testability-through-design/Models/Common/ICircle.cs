@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models.Common
 {
-	public interface ICircle
+	public interface ICircle : IEquatable<ICircle>
 	{        
 		decimal X { get; set; }
         decimal Y { get; set; }

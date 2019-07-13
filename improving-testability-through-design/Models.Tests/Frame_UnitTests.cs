@@ -135,21 +135,81 @@ namespace Models.Tests
         {
             AssertTryAddCircleResult(5.4M, 6.1M, false);
         }
+
+        [TestMethod]
+        public void CirclesCount_CircleInsideTheFrame_ReturnsOne()
+        {
+            AssertCirclesCount(1.5M, 1.5M, 1);
+        }
+
+        [TestMethod]
+        public void CirclesCount_CircleOutsideTheFrame_ReturnsZero()
+        {
+            AssertCirclesCount(0.7M, 1.5M, 0);
+        }
+		private void TryAddCircle_CircleEqualToExistingCircle_ReturnsFalse()
+        {
+            bool equalsResult = true;
+			bool expectedResult = false;
+            AssertTryAddCircleTwoCircles(equalsResult, expectedResult);
+        }
+		private void TryAddCircle_CircleEqualToExistingCircle_ReturnsTrue()
+        {
+            bool equalsResult = false;
+			bool expectedResult = true;
+            AssertTryAddCircleTwoCircles(equalsResult, expectedResult);
+        }
+		private void AssertTryAddCircleTwoCircles(bool equalsResult, bool expectedResult)
+		{
+			Frame frame = CreateTestingFrame();
+			ICircle circle1 = MockCircle(1.5M, 1.5M, equalsResult);
+			ICircle circle2 = MockCircle(1.5M, 1.6M, equalsResult);
+
+			frame.TryAddCircle(circle1);
+			bool result = frame.TryAddCircle(circle2);
+
+			Assert.AreEqual(expectedResult, result);
+		}
 		private void AssertTryAddCircleResult(decimal x, decimal y, bool expectedResult)
         {
-			Frame frame = new Frame();
-			frame.Length = 3.0M;
-			frame.Width = 3.0M;
-
-			Mock<ICircle> circleMock = new Mock<ICircle>();
-			circleMock.SetupGet(c => c.X).Returns(x);
-			circleMock.SetupGet(c => c.Y).Returns(y);
-			circleMock.SetupGet(c => c.Radius).Returns(1.0M);
-
-			ICircle circle = circleMock.Object;
-
-            bool result = frame.TryAddCircle(circle);
+            bool result = InvokeTryAddCircle(x, y);
             Assert.AreEqual(expectedResult, result);
+        }
+		private void AssertCirclesCount(decimal x, decimal y, int expectedCount)
+		{
+			Frame frame;
+			InvokeTryAddCircle(x, y, out frame);
+			Assert.AreEqual(expectedCount, frame.CirclesCount);
+		}
+		private bool InvokeTryAddCircle(decimal x, decimal y)
+		{
+			Frame frame;
+			return InvokeTryAddCircle(x, y, out frame);
+		}
+		private bool InvokeTryAddCircle(decimal x, decimal y, out Frame frame)
+		{
+			frame = CreateTestingFrame();
+			ICircle circle = MockCircle(x, y);
+			return frame.TryAddCircle(circle);
+		}
+		private Frame CreateTestingFrame()
+        {
+            Frame frame = new Frame();
+            frame.Length = 3.0M;
+            frame.Width = 3.0M;
+            return frame;
+        }
+
+        private ICircle MockCircle(decimal x, decimal y, bool equalsResult = false)
+        {
+            Mock<ICircle> circleMock = new Mock<ICircle>();
+            circleMock.SetupGet(c => c.X).Returns(x);
+            circleMock.SetupGet(c => c.Y).Returns(y);
+            circleMock.SetupGet(c => c.Radius).Returns(1.0M);
+            circleMock.Setup(c => c.Equals(It.IsAny<ICircle>())).Returns(equalsResult);
+            ICircle circle = circleMock.Object;
+            return circle;
         }
 	}
 }
+

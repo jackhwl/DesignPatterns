@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace Models
     {
         private decimal length;
         private decimal width;
+        private ICollection<ICircle> circles = new HashSet<ICircle>();
 
         public decimal Length 
         {
@@ -41,12 +43,19 @@ namespace Models
 
 		public bool TryAddCircle(Common.ICircle circle)
 		{
+			if (this.circles.Contains(circle))
+				return false;
 			if (circle.X < circle.Radius ||
                 circle.X > this.length - circle.Radius ||
                 circle.Y < circle.Radius ||
                 circle.Y > this.width - circle.Radius)
                 return false;
+			this.circles.Add(circle);
 			return true;
+		}
+		public int CirclesCount
+		{
+			get { return this.circles.Count; }
 		}
     }
 }
