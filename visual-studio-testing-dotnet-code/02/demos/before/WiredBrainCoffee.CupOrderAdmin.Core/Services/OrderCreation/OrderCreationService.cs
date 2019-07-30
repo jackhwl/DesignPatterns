@@ -23,20 +23,35 @@ namespace WiredBrainCoffee.CupOrderAdmin.Core.Services.OrderCreation
     public async Task<OrderCreationResult> CreateOrderAsync(Customer customer,
       int numberOfOrderedCups)
     {
-      // TODO: Throw ArgumentOutOfRangeException if number of ordered cups is less than 1
+		if (customer == null)
+		{
+			throw new ArgumentOutOfRangeException(nameof(customer));
+		}
+      if (numberOfOrderedCups < 1)
+			{
+				throw new ArgumentOutOfRangeException(nameof(numberOfOrderedCups), $"{nameof(numberOfOrderedCups)} must be greater than zerp");
+			}
 
       OrderCreationResult result;
-
-      // TODO: Return StockExceeded result code if not enough cups in stock
-
-      Order createdOrder = await CreateOrderInternalAsync(customer, numberOfOrderedCups);
-
-      result = new OrderCreationResult
-      {
-        ResultCode = OrderCreationResultCode.Success,
-        CreatedOrder = createdOrder, // TODO: Store created order in CreatedOrder property
-        RemainingCupsInStock = 0 // TODO: Store remaining cups in stock in OrderCreationResult
-      };
+	  var numberOfCupsInStock = await _coffeeCupRepository.GetCoffeeCupsInStockCountAsync();
+      var areEnoughCupsInStock = numberOfOrderedCups <= numberOfCupsInStock;
+	  if (areEnoughCupsInStock)
+		{
+			Order createdOrder = await CreateOrderInternalAsync(customer, numberOfOrderedCups);
+			result = new OrderCreationResult
+			{
+				ResultCode = OrderCreationResultCode.Success,
+				CreatedOrder = createdOrder,
+				RemainingCupsInStock = numberOfCupsInStock - numberOfOrderedCups
+			};
+		} else
+		{
+			result = new OrderCreationResult
+			{
+				ResultCode = OrderCreationResultCode.StockExceeded,
+				RemainingCupsInStock = numberOfCupsInStock
+			};
+		}
 
       return result;
     }
