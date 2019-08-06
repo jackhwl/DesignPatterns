@@ -57,5 +57,12 @@ namespace Models
 		{
 			get { return this.circles.Count; }
 		}
+
+		public void Draw() {
+			Console.WriteLine("Frame {0}x{1}", this.length, this.width);
+			//foreach(ICircle circle in this.circles)
+			//	circle.Draw();
+		}
+
     }
 }
