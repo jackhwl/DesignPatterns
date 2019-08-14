@@ -1,0 +1,39 @@
+﻿Application
+	Implementation
+		ApplicationServices
+	Interfaces
+		IDomainServices
+Domain
+	Implementation
+		DomainServices
+		Account
+		User
+	Interfaces
+		IAccount
+		IProduct
+		IProductRepository
+		IUser
+		IUserRepository
+		MoneyTransaction
+Infrastructure
+	Implementation
+		ProductData
+		ProductRepository
+		UserRepository
+Presentation
+	Implementation
+		Commands
+			DepositCommand
+			DoNOthingCommand
+			LoginCommand
+			LogoutCommand
+			PurchaseCommand
+			RegisterCommand
+		MenuItem
+		UserInterface
+	Interfaces
+		IApplicationServices
+		ICommand
+		IUserInterface
+		Receipt
+		StockItem
