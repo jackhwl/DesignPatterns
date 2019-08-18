@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using NullReferencesDemo.Domain.Interfaces;
 
 namespace NullReferencesDemo.Infrastructure.Implementation
@@ -21,6 +22,8 @@ namespace NullReferencesDemo.Infrastructure.Implementation
             
             if (!this.usernameToUser.TryGetValue(username, out user))
                 return new IUser[0];
+				// return Enumerable.Empty<IUser>();
+
 
             return new IUser[] { user };
 
