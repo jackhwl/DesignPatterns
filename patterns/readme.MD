@@ -6,6 +6,7 @@ Prototype
 Singleton
 Lazy Instantiation
 Utility Pattern
+Service Locator
 
 ##Structural
 ##Behavioral
