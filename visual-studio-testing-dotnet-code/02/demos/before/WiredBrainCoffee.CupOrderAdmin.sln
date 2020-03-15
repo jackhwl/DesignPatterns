@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiredBrainCoffee.CupOrderAdmin.UI", "WiredBrainCoffee.CupOrderAdmin.UI\WiredBrainCoffee.CupOrderAdmin.UI.csproj", "{EE9968B8-61C9-4E5C-A262-29E39EEC2AAD}"
 EndProject
@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.CupOrderAd
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.CupOrderAdmin.DataAccess", "WiredBrainCoffee.CupOrderAdmin.DataAccess\WiredBrainCoffee.CupOrderAdmin.DataAccess.csproj", "{F561311C-8C00-429A-979A-AE9488D0585C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiredBrainCoffee.CupOrderAdmin.Core.Tests", "WiredBrainCoffee.CupOrderAdmin.Core.Tests\WiredBrainCoffee.CupOrderAdmin.Core.Tests.csproj", "{2DF6F465-83E3-4F4A-A69E-2B0692ABE03A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.CupOrderAdmin.Core.Tests", "WiredBrainCoffee.CupOrderAdmin.Core.Tests\WiredBrainCoffee.CupOrderAdmin.Core.Tests.csproj", "{2DF6F465-83E3-4F4A-A69E-2B0692ABE03A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
